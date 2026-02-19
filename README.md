@@ -1,6 +1,3 @@
-Temă IA1
-Nume: Iosif Ianis-Cosmin
-Grupa: 311CC
 
 Site - ATVShop
 
