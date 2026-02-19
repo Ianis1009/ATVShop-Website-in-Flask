@@ -1,0 +1,23 @@
+{
+    "timestamp": "2025-05-20T11:05:37.705436",
+    "full_name": null,
+    "email": null,
+    "phone": null,
+    "address": null,
+    "payment_method": null,
+    "items": [
+        {
+            "id": 1,
+            "name": "CFMOTO 450L",
+            "price": 6400,
+            "quantity": 1
+        },
+        {
+            "id": 2,
+            "name": "CFMOTO 600L OVERLAND",
+            "price": 7900,
+            "quantity": 2
+        }
+    ],
+    "total_price": 22200
+}

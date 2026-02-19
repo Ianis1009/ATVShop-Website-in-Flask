@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - ATVShop{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <p>Dacă ai orice întrebare, nu ezita să ne contactezi!</p>
+    <br><br>
+    <p>
+        Gmail: atvshop@gmail.com<br>
+        Telefon: 0700208700 <br>
+        Adresa: Splaiul Independeței, Nr. 290, Sector 6, București, România<br>
+    </p>
+</div>
+
+<div class="container-imagini text-center">
+    <img src="{{ url_for('static', filename='contact1.png') }}" alt="1" class="Imagine-Contact" width="300">
+    <img src="{{ url_for('static', filename='contact2.png') }}" alt="2" class="Imagine-Contact" width="300">
+    <img src="{{ url_for('static', filename='contact3.png') }}" alt="3" class="Imagine-Contact" width="300">
+    <img src="{{ url_for('static', filename='cf-back.png') }}" alt="4" class="Imagine-Contact" width="300">
+</div>
+
+<footer class="text-center mt-5 mb-3">
+    <div class="d-flex justify-content-center gap-3">
+        <a href="https://gmail.com" target="_blank">
+            <img src="{{ url_for('static', filename='gmail.png') }}" alt="Gmail" style="height: 80px;">
+        </a>
+        <a href="https://instagram.com/" target="_blank">
+            <img src="{{ url_for('static', filename='insta.png') }}" alt="Instagram" style="height: 80px;">
+        </a>
+        <a href="https://facebook.com/" target="_blank">
+            <img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook" style="height: 80px;">
+        </a>
+    </div>
+</footer>
+{% endblock %}

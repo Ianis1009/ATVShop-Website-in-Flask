@@ -1,0 +1,23 @@
+{
+    "timestamp": "2025-05-21T22:17:59.461690",
+    "full_name": "marius ion",
+    "email": "marius_ion@yahoo.ro",
+    "phone": "0798205488",
+    "address": "comuna Mateiaș, județul Sălaj, str principala",
+    "payment_method": "leasing",
+    "items": [
+        {
+            "id": 6,
+            "name": "CFMOTO X10 SPECIAL EDITION",
+            "price": 15000,
+            "quantity": 1
+        },
+        {
+            "id": 2,
+            "name": "CFMOTO 600L OVERLAND",
+            "price": 7900,
+            "quantity": 1
+        }
+    ],
+    "total_price": 22900
+}

@@ -1,0 +1,17 @@
+{
+    "timestamp": "2025-05-20T17:39:21.288129",
+    "full_name": "a",
+    "email": "a@a.com",
+    "phone": "0700023981",
+    "address": "a",
+    "payment_method": "cash",
+    "items": [
+        {
+            "id": 4,
+            "name": "CFMOTO 850 XC",
+            "price": 9800,
+            "quantity": 1
+        }
+    ],
+    "total_price": 9800
+}

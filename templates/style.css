@@ -1,0 +1,191 @@
+/* Setăm fundalul cu imaginile dorite */
+body {
+    background-image: url("b.png"), url("background.png"), url("cf-back.png"), url("back.png");
+    background-size: cover; /* Asigură că imaginile acoperă întreaga fereastră */
+    background-position: center center; /* Centrează fiecare imagine */
+    background-repeat: no-repeat; /* Previne repetarea imaginilor */
+    animation: moveBackground 25s ease-in-out infinite, changeBackground 48s ease-in-out infinite;
+    height: 100vh; /* Înălțimea completă a ferestrei */
+    margin: 0; /* Elimină marginea implicită */
+    overflow: hidden; /* Previne derularea necontrolată a paginii */
+    position: relative; /* Permite manipularea imaginilor de fundal */
+    font-family: 'Poppins', sans-serif; /* Setăm fontul Poppins */
+    color: black; /* Textul va fi negru pe fundalul clar */
+    line-height: 1.6;
+}
+
+/* Animație pentru mișcarea fundalului */
+@keyframes moveBackground {
+    0% { background-position: center center; }
+    25% { background-position: 30% 20%; }
+    50% { background-position: 60% 50%; }
+    75% { background-position: 10% 80%; }
+    100% { background-position: center center; }
+}
+
+/* Animație pentru schimbarea imaginii de fundal cu tranziții line între imagini */
+@keyframes changeBackground {
+    0% { 
+        background-image: url("b.png"), url("background.png"), url("cf-back.png"), url("back.png");
+    }
+    25% { 
+        background-image: url("background.png"), url("cf-back.png"), url("back.png"), url("b.png");
+    }
+    50% { 
+        background-image: url("cf-back.png"), url("back.png"), url("b.png"), url("background.png");
+    }
+    75% { 
+        background-image: url("back.png"), url("b.png"), url("background.png"), url("cf-back.png");
+    }
+    100% { 
+        background-image: url("b.png"), url("background.png"), url("cf-back.png"), url("back.png");
+    }
+}
+
+/* Efect pentru "fade-in" cu o tranziție lină */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    50% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Stilizare pentru textul <p> */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black; /* Textul va fi negru */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adăugăm o umbră ușoară pentru text */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal alb semi-transparent pentru a ajuta vizibilitatea */
+    border-radius: 8px; /* Colțuri rotunjite */
+    padding: 10px; /* Spațiu în jurul textului */
+}
+
+/* Titluri stilizate */
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adăugăm umbra textului pentru mai mult contrast */
+}
+
+/* Stilizare pentru meniul de navigare */
+.navbar-nav .nav-link {
+    color: #808080; /* Culoare gri pentru text */
+    font-size: 18px; /* Dimensiunea textului */
+    text-transform: uppercase; /* Transformăm literele în majuscule pentru un aspect mai elegant */
+    letter-spacing: 1px; /* Distanță mai mare între litere pentru un efect aerisit */
+    padding: 10px 15px; /* Spațiu în jurul textului pentru un aspect echilibrat */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, background-image 0.5s ease; /* Animație pentru culoare, fundal și transformare */
+    background-image: linear-gradient(135deg, #808080, #808080); /* Gradient inițial gri */
+    border: 2px solid transparent; /* Borderul transparent pentru a face efectul mai fluid */
+    border-radius: 5px; /* Colțuri rotunjite pentru butoane */
+    background-size: 200% 200%; /* Setăm dimensiunea gradientului */
+    color: #fff; /* Culoare text albă pentru butoane */
+}
+
+/* Culoare la hover (când treci cu mouse-ul peste link) */
+.navbar-nav .nav-link:hover {
+    background-image: linear-gradient(135deg, #0066cc, #00bfff); /* Gradient albastru spre cyan */
+    color: #ffffff; /* Text alb pentru contrast */
+    transform: scale(1.1); /* Crește ușor dimensiunea butonului */
+    border-color: #0066cc; /* Adăugăm border albastru la hover */
+}
+
+/* Culoare la focus (când butonul este apăsat) */
+.navbar-nav .nav-link:focus {
+    background-image: linear-gradient(135deg, #ff6600, #ff9966); /* Gradient portocaliu spre un portocaliu mai deschis */
+    color: #ffffff; /* Text alb pentru contrast */
+    border-color: #ff6600; /* Border portocaliu la focus */
+    transform: scale(1.05); /* Ușor mai mare la focus */
+    outline: none; /* Eliminăm conturul implicit de la butonul activ */
+}
+
+/* Stilizare pentru linkuri */
+a {
+    color: #ffcc00; /* Culoare aurie pentru linkuri */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f3a1f; /* verde închis, pădure */
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: linear-gradient(to right, #3ba55c, #7ed957);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+footer img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+footer img:hover {
+    transform: scale(1.15);
+}
+
+.container-imagini {
+    display: flex;
+    justify-content: center; /* aliniere orizontală */
+    gap: 20px; /* spațiu între imagini */
+    margin: 40px 0;
+}
+
+.Imagine-Contact {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid orange; 
+    margin: 20px auto;
+    display: block;
+}
+
+.Imagine-Contact:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    border-color: #1f5f3d;
+}

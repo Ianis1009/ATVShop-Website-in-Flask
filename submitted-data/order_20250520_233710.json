@@ -1,0 +1,17 @@
+{
+    "timestamp": "2025-05-20T23:37:10.201712",
+    "full_name": "ionel marcel",
+    "email": "marcelatv@gmail.com",
+    "phone": "0701304140",
+    "address": "strada principala, comuna maracineni, judetul arges",
+    "payment_method": "cash",
+    "items": [
+        {
+            "id": 4,
+            "name": "CFMOTO 850 XC",
+            "price": 9800,
+            "quantity": 2
+        }
+    ],
+    "total_price": 19600
+}

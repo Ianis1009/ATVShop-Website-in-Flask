@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Mulțumim! - ATVShop{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h2>Comandă trimisă cu succes!</h2>
+    <p>Îți mulțumim, {{ name }}. Vei fi primi un apel din partea noastră în curând.</p>
+    <a href="{{ url_for('products') }}" class="btn btn-primary mt-3">Înapoi la produse</a>
+</div>
+{% endblock %}

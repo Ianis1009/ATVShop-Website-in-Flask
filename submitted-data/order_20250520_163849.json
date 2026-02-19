@@ -1,0 +1,17 @@
+{
+    "timestamp": "2025-05-20T16:38:49.052958",
+    "full_name": "sandu bogdan",
+    "email": "sandu_bogdan@gmail.ro",
+    "phone": "0700023981",
+    "address": "comuna bradu",
+    "payment_method": "cash",
+    "items": [
+        {
+            "id": 6,
+            "name": "CFMOTO X10 SPECIAL EDITION",
+            "price": 15000,
+            "quantity": 1
+        }
+    ],
+    "total_price": 15000
+}

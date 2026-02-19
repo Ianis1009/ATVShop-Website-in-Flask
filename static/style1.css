@@ -1,0 +1,172 @@
+
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Efect de umbra */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px; /* Colt rotunjit */
+    padding: 10px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-nav .nav-link {
+    color: #808080; 
+    font-size: 18px;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    padding: 10px 15px; 
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, background-image 0.5s ease; 
+    background-image: linear-gradient(135deg, #808080, #808080); 
+    border: 2px solid transparent; /* Borderul transparent */
+    border-radius: 5px; /* Colt rotunjit*/
+    background-size: 200% 200%; /* Dimensiune gradient */
+    color: #fff; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-image: linear-gradient(135deg, #0066cc, #00bfff); 
+    color: #ffffff; 
+    transform: scale(1.1); /* Efect de crestere */
+    border-color: #0066cc; 
+}
+
+
+.navbar-nav .nav-link:focus {
+    background-image: linear-gradient(135deg, #ff6600, #ff9966);
+    color: #ffffff; 
+    border-color: #ff6600; 
+    transform: scale(1.05); /* Efect la focus */
+    outline: none; 
+}
+
+
+a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f3a1f; 
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: linear-gradient(to right, #3ba55c, #7ed957);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.card.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+}
+
+.card.product-card:hover {
+    transform: scale(1.05); /*Un efect de marire*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adaug o umbra*/
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    /* Aplic gradient pentru fundal */
+    background: linear-gradient(to bottom right, #2ecc71, #3498db);
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a[href*="cart"] {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #000;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #007bff;
+}
+
+.cart-icon i {
+    font-size: 26px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 13px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    animation: pop-in 0.3s ease-in-out;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

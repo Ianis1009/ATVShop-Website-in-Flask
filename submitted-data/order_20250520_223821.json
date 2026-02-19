@@ -1,0 +1,17 @@
+{
+    "timestamp": "2025-05-20T22:38:21.371752",
+    "full_name": "maria ioana",
+    "email": "maria@gmail.com",
+    "phone": "07542123",
+    "address": "comuna voinesti, judetul teleorman",
+    "payment_method": "leasing",
+    "items": [
+        {
+            "id": 2,
+            "name": "CFMOTO 600L OVERLAND",
+            "price": 7900,
+            "quantity": 1
+        }
+    ],
+    "total_price": 7900
+}
